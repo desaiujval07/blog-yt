@@ -33,7 +33,7 @@ const Login = () => {
 
     try {
       dispatch(setLoading(true)) 
-      const response = await axios.post(`http://localhost:8000/api/v1/user/login`, input, {
+      const response = await axios.post(`https://blog-yt-3.onrender.com/user/login`, input, {
         headers: {
           "Content-Type": "application/json"
         },
