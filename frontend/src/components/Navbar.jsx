@@ -45,7 +45,7 @@ const Navbar = () => {
 
   const logoutHandler = async (e) => {
     try {
-      const res = await axios.get(`https://blog-yt-3.onrender.com/user/logout`, {
+      const res = await axios.get(`https://blog-yt-3.onrender.com/api/v1/user/logout`, {
         withCredentials: true,
       });
       if (res.data.success) {

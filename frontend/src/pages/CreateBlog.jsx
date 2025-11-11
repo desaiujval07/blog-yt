@@ -25,7 +25,7 @@ const CreateBlog = () => {
         
         try {
             setLoading(true)
-            const res = await axios.post(`https://blog-yt-3.onrender.com/blog/`, { title, category }, {
+            const res = await axios.post(`https://blog-yt-3.onrender.com/api/v1/blog/`, { title, category }, {
                 headers: {
                     "Content-Type": "application/json",
                 },
